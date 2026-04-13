@@ -43,7 +43,7 @@ h1{font-size:24px;font-weight:700;margin-bottom:8px}
 <script>
 var params = new URLSearchParams(window.location.search);
 var id = params.get('id') || '';
-var deepLink = id ? 'fambudget://join?id=' + encodeURIComponent(id) : 'fambudget://';
+var deepLink = id ? 'fambudget:///?joinId=' + encodeURIComponent(id) : 'fambudget:///';
 
 if (id) {
     document.getElementById('household-id').textContent = 'Household ID: ' + id;
